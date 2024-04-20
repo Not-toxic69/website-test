@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- google font  -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Single+Day&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font  -->
+    <link
+      rel="stylesheet"
+      href="/assets/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/theme.css"
+    />
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+    <title>flovi inu</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <div class="hero_bg">
+      <!-- nav  -->
+      <nav>
+        <div
+          class="lg:px-10 lg:py-5 md:py-5 p-2 flex justify-between items-center md:bg-transparent bg-white bg-opacity-5 border-b md:border-none border-gray-500"
+        >
+          <div class="flex items-center gap-1">
+            <img
+              src="/assets/images/logo.png"
+              alt="logo"
+              width="75"
+              height="75"
+              class="md:w-[75px] md:h-[75px] w-[55px] h-[55px] nav-item"
+            />
+            <h3 class="text-2xl md:block hidden nav-item">Flovi inu</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <a
+              href="https://t.me/flovicommunity"
+              class="nav-item zoom"
+            >
+              <img
+                src="/assets/images/telegram.png"
+                alt="telegram"
+                class="md:w-auto md:h-auto w-[40px] h-[40px]"
+              />
+            </a>
+            <a
+              href="https://x.com/Flovi_CTO?t=Hu833gGm9i9Vrz3dzwbLpQ&s=09"
+              class="nav-item zoom"
+            >
+              <img
+                src="/assets/images/twitter.png"
+                alt="twitter"
+                class="md:w-auto md:h-auto w-[40px] h-[40px]"
+              />
+            </a>
+            <a
+              href="https://t.me/flovicommunity"
+              class="zoom hover:bg-white hover:text-black transetion nav-item lg:px-10 py-3 px-5 md:text-base text-sm border border-white rounded-2xl md:block hidden"
+              >Communuity</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero   -->
+      <div class="container lg:px-10 lg:grid grid-cols-2">
+        <div class="lg:mt-0 md:mt-5 nav-item">
+          <img
+            src="/assets/images/hero-main.png"
+            alt="Flovi inu"
+            width="100%"
+            class="lg:h-[980px] md:h-400px] lg:w-auto md:w-[400px] w-[200px] mx-auto"
+          />
+        </div>
+        <div
+          class="flex flex-col lg:justify-center justify-center lg:items-start items-center md:px-0 px-5"
+        >
+          <h1
+            class="lg:text-[102px] md:text-[80px] text-6xl md:mb-0 mb-2 nav-item"
+          >
+            flovi inu
+          </h1>
+          <p class="font-light lg:text-start text-center nav-item">
+            Flovi Inu, first of all, is a token represented and fully owned by
+            the community.
+
+            <br />
+            <br />
+            The story of Flovi is unique - Where we started, were we come from &
+            what we are looking to achieve in the future.
+          </p>
+          <div class="flex gap-4 lg:mt-8 lg:mt-4 mt-8">
+            <a
+              href="https://app.uniswap.org/swap?&chain=mainnet&use=v2&outputCurrency=0x725024200cd4e1f259fcf2b7153d37fb477e139c"
+              class="zoom bg-[#FF2300] lg:px-16 px-10 py-3.5 rounded-[13px] nav-item"
+            >
+              Buy Now
+            </a>
+            <a
+              href="https://www.dextools.io/app/en/ether/pair-explorer/0xcae4ea1ca5d2c727ea5bc7fcf74642288a580231?t=1713396209860"
+              class="zoom hover:bg-white hover:text-black transetion lg:px-16 px-10 py-3.5 border border-white rounded-[13px] nav-item"
+              >Chart</a
+            >
+          </div>
+          <div class="flex items-center lg:mt-16 mt-8">
+            <div class="lg:px-6 md:px-10 px-5 py-6 border-r border-white">
+              <h3 class="lg:text-[31px] md:text-[26px] text-xl">Ticker</h3>
+              <p class="lg:text-2xl text-lg">$FLOVI</p>
+            </div>
+            <div class="lg:px-6 md:px-10 px-5 py-6 border-r border-white">
+              <h3
+                class="lg:text-[31px] md:text-[26px] text-xl whitespace-nowrap"
+              >
+                0 / 0 %
+              </h3>
+              <p class="lg:text-2xl text-lg">Taxes</p>
+            </div>
+            <div class="lg:px-6 md:px-10 px-5 py-6">
+              <h3 class="lg:text-[31px] md:text-[26px] text-xl">RENOUNCED</h3>
+              <p class="lg:text-2xl text-lg">LP Burnt</p>
+            </div>
+          </div>
+          <div class="mt-8">
+            <img
+              src="/assets/images/Group-img.png"
+              alt="Group-img"
+              width="100%"
+              class="lg:h-[355px] object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex lg:m-auto -my-[60px]">
+      <marquee
+        direction="left"
+        height="80px"
+        class="bg-[#FF2300] border-y-4 border-black flex items-center"
+      >
+        <p class="text-3xl text-black">
+          $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi
+          - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi -
+          $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi
+          - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi -
+        </p>
+      </marquee>
+    </div>
+    <!-- about section  -->
+    <div
+      id="about"
+      class="bg-[#161112] about lg:px-20 md:px-10 px-5 lg:py-20 py-32 w-full overflow-x-hidden"
+    >
+      <div class="lg:grid lg:grid-cols-2 grid-cols-1 items-center gap-2">
+        <div
+          class="delay-[300ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0"
+          data-taos-offset="400"
+        >
+          <h1
+            class="lg:text-[75px] text-[60px] w-full lg:max-w-[400px] max-w-[300px] w-auto"
+          >
+            ABOUT Flovi inu 🐾
+          </h1>
+          <p>
+            At the heart of $FLOVI lies our unwavering commitment to
+            decentralization. We don't just advocate for it; we embody it. As a
+            community-driven platform, $FLOVI empowers each member to not only
+            participate in a decentralized ecosystem but to also take the helm
+            of their own financial journey.
+          </p>
+          <div class="mt-5 -ml-6">
+            <a
+              href="https://flooz.xyz/hub/-1002011597465?utm_source=telegram&utm_medium=buy-message-iris-teams&utm_campaign=hub-page"
+              class="zoom"
+            >
+              <img
+                src="/assets/images/buy-now-btn.png"
+                alt="buy-now-btn"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="mx-auto flex justify-center delay-[300ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0"
+          data-taos-offset="400"
+        >
+          <img
+            src="/assets/images/about-cat.png"
+            alt="about cat"
+            class="md:h-[681px] h-[400px]"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- grid sectiion  -->
+    <div class="grid-bg w-full overflow-x-hidden">
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 px-4 my-10">
+        <div
+          class="bg-[#CF2129] py-10 text-center delay-[300ms] duration-[600ms] taos:[transform:translate3d(0,-200px,0)_scale(0.6)] taos:opacity-0"
+          data-taos-offset="500"
+        >
+          <img
+            src="/assets/images/cat-1.png"
+            alt="cat-1"
+          />
+          <a
+            href="https://www.dextools.io/app/en/ether/pair-explorer/0xcae4ea1ca5d2c727ea5bc7fcf74642288a580231?t=1713396209860"
+            class="lg:text-[32px] text-2xl text-center mt-6 block"
+          >
+            DEXTOOLS→
+          </a>
+        </div>
+        <div
+          class="bg-[#A50121] flex flex-col py-10 text-center delay-[300ms] duration-[600ms] taos:[transform:translate3d(0,-200px,0)_scale(0.6)] taos:opacity-0"
+          data-taos-offset="500"
+        >
+          <img
+            src="/assets/images/cat-2.png"
+            alt="cat-2"
+          />
+          <a
+            href="https://etherscan.io/token/0x725024200cd4e1f259fcf2b7153d37fb477e139c"
+            class="lg:text-[32px] text-2xl text-center mt-6 block"
+          >
+            Etherscan→
+          </a>
+        </div>
+        <div
+          class="bg-[#CF2129] py-10 text-center delay-[300ms] duration-[600ms] taos:[transform:translate3d(0,-200px,0)_scale(0.6)] taos:opacity-0"
+          data-taos-offset="500"
+        >
+          <img
+            src="/assets/images/cat-3.png"
+            alt="cat-3"
+          />
+          <a
+            href="https://coinmarketcap.com/currencies/flovi-inu/"
+            class="lg:text-[32px] text-2xl text-center mt-6 block"
+          >
+            coinmarketcap→
+          </a>
+        </div>
+        <div
+          class="bg-[#A50121] py-10 text-center delay-[300ms] duration-[600ms] taos:[transform:translate3d(0,-200px,0)_scale(0.6)] taos:opacity-0"
+          data-taos-offset="500"
+        >
+          <img
+            src="/assets/images/cat-4.png"
+            alt="cat-4"
+          />
+          <a
+            href=" https://www.coingecko.com/en/coins/flovi-inu"
+            class="lg:text-[32px] text-2xl text-center mt-6 block"
+          >
+            coingecko→
+          </a>
+        </div>
+      </div>
+      <div class="lg:py-20 py-10">
+        <h1
+          class="lg:text-[75px] md:text-[60px] text-5xl text-center delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,0,0)_scale(1.2)] taos:opacity-0"
+          data-taos-offset="400"
+        >
+          $FLOVI & $FLOKI STORY📝 
+        </h1>
+        <div
+          class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-x-8 lg:gap-y-32 md:gap-y-20 gap-y-14 lg:px-32 md:px-10 px-5 lg:my-20 md:my-10 my-8 items-center"
+        >
+          <!-- box 1 -->
+          <div
+            class="lg:hidden flex justify-center duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+            data-taos-offset="400"
+          >
+            <img
+              src="/assets/images/dog-1.png"
+              alt="dog-1"
+            />
+          </div>
+          <div>
+            <p
+              class="text-2xl delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,0,0)_scale(1.2)] taos:opacity-0"
+              data-taos-offset="400"
+            >
+              Everybode knew Floki, cheerful and wise dog of legends; little was
+              however known of his little brother – FLOVI – who lived in his
+              shadow for many years. He was locked at home for deeds so dark,
+              that they were not to be spoken of...until now. Phle wala
+              text remove krdein
+            </p>
+          </div>
+          <div
+            class="lg:flex hidden justify-center duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+            data-taos-offset="400"
+          >
+            <img
+              src="/assets/images/dog-1.png"
+              alt="dog-1"
+            />
+          </div>
+          <!-- box 2 -->
+
+          <div
+            class="lg:flex hidden justify-center duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+          >
+            <img
+              src="/assets/images/dog-2.png"
+              alt="dog-2"
+            />
+          </div>
+          <div
+            class="lg:hidden flex justify-center duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+          >
+            <img
+              src="/assets/images/dog-2.png"
+              alt="dog-2"
+            />
+          </div>
+          <div>
+            <ul
+              data-taos-offset="400"
+              class="list-disc pl-5 text-2xl delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,0,0)_scale(1.2)] taos:opacity-0"
+            >
+              <li class="text-2xl">
+                <p>
+                  You are big boy now, Flovi. I look at you and feel I'm
+                  confident I can leave you at home alone. Don't do anything I
+                  wouldn't do, like...
+                </p>
+              </li>
+              <li class="text-2xl">
+                <p>Buying Pepe?</p>
+              </li>
+              <li class="text-2xl">
+                <p>
+                  Yes Flovi, like buying Pepe. I'm leaving and will be back in
+                  30 minutes, everything will be fine.
+                </p>
+              </li>
+              <li class="text-2xl">
+                <p>Good God, how mistaken he was.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- box 3 -->
+          <div
+            class="lg:hidden flex justify-center duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+            data-taos-offset="400"
+          >
+            <img
+              src="/assets/images/dog-3.png"
+              alt="dog-3"
+            />
+          </div>
+
+          <div>
+            <p
+              class="text-2xl delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,0,0)_scale(1.2)] taos:opacity-0"
+              data-taos-offset="400"
+            >
+              When Floki came back home after 30 minutes, he saw complete
+              destruction. <br />
+              Curtain's were chewed, furniture was scratched and chewed, shoes
+              were stained, ripped and thoroughly chewed. Wires were ripped from
+              walls and electronic appliances. <br />
+              - FLOVI, WHY, WHY WHY EVEN WIRES? As Flovi put it, he "wanted to
+              make everythin' decentralized." <br />
+              Floki was about to forgive Flovi, but then he saw two things that
+              changed everything.
+            </p>
+          </div>
+          <div
+            class="lg:flex hidden justify-center duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+            data-taos-offset="400"
+          >
+            <img
+              src="/assets/images/dog-3.png"
+              alt="dog-3"
+            />
+          </div>
+
+          <!-- box 4 -->
+
+          <div
+            data-taos-offset="400"
+            class="lg:block hidden"
+          >
+            <img
+              src="/assets/images/dog-4.png"
+              alt="dog-4"
+            />
+          </div>
+          <div
+            data-taos-offset="400"
+            class="lg:hidden block"
+          >
+            <img
+              src="/assets/images/dog-5.png"
+              alt="dog-4"
+            />
+          </div>
+          <div>
+            <p
+              class="text-2xl delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,0,0)_scale(1.2)] taos:opacity-0"
+            >
+              In Floki's and Flovis' home, on the floor was broken Ledger which
+              just 30 minutes ago contained 986 BTC and which currently were
+              nowhere to be found. This really damaged the home budget. <br />
+              Not so far away was lying a pack of punctured Floki's condoms –
+              and this was what really and completely destroyed all trust to
+              Flovi. As a punishment, Floki told Flovi that he won't be able to
+              go outside.
+            </p>
+          </div>
+
+          <!-- box 5 -->
+          <div
+            class="lg:hidden flex justify-center duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+            data-taos-offset="400"
+          >
+            <img
+              src="/assets/images/dog-5.png"
+              alt="dog-5"
+            />
+          </div>
+
+          <div>
+            <p
+              data-taos-offset="400"
+              class="text-2xl delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,0,0)_scale(1.2)] taos:opacity-0"
+            >
+              Clearly for Flovi impossible was possible and the same was true
+              for his friends, also known as "The Community". They are working
+              meticulously, hand in hand to help Flovi prove that he can be as
+              great as his older brother – both on and off the chart. Flovi on
+              the other hand will always stay true to himself - cute, cheerful
+              and volatile. <br /><br />
+              <span class="text-[#FF2300]"
+                >Pro-tip: Flovi in house ->condoms out</span
+              >
+            </p>
+          </div>
+          <div
+            class="lg:flex hidden justify-center duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+            data-taos-offset="400"
+          >
+            <img
+              src="/assets/images/dog-5.png"
+              alt="dog-5"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Games🎮  -->
+    <div class="bg-[#CF2129] lg:py-20 pt-10 w-full overflow-x-hidden">
+      <div
+        class="grid lg:grid-cols-2 grid-cols-1 w-full lg:max-w-[1000px] md:max-w-[600px] w-full mx-auto gap-8 items-center md:px-0 px-5"
+      >
+        <div
+          class="flex items-center justify-center duration-[300ms] taos:[transform:perspective(2500px)_rotateY(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+          data-taos-offset="400"
+        >
+          <img
+            src="/assets/images/game-img.png"
+            alt="game-img "
+            class="md:h-[447px] h-[300px]"
+          />
+        </div>
+        <div class="lg:mt-20 md:mt-10 mt-0">
+          <h1
+            class="lg:text-[75px] md:text-[60px] text-5xl lg:text-start text-center duration-[300ms] taos:[transform:perspective(2500px)_rotateY(100deg)] taos:invisible taos:[backface-visibility:hidden]"
+            data-taos-offset="400"
+          >
+            Games🎮
+          </h1>
+          <p
+            data-taos-offset="400"
+            class="text-2xl mt-8 lg:text-start text-center duration-[300ms] taos:[transform:perspective(2500px)_rotateY(100deg)] taos:invisible taos:[backface-visibility:hidden]"
+          >
+            Flovi. is a protocol that gives the community the power to
+            launchtheir own token sale and create their own token doesn't stop
+            there- it also has a variety of other tools to help you get your
+            token out there.like listing it on Pancake pancakeswap and with
+            plans to add more popular exchanges in the future.
+          </p>
+          <a
+            href="http://flappy.flovigames.com/"
+            class="zoom lg:text-start flex lg:justify-start justify-center lg:-ml-6 duration-[1000ms] taos:opacity-0"
+            data-taos-offset="300"
+          >
+            <img
+              src="/assets/images/play-now.png"
+              alt="play-now"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Roadmap  -->
+    <div
+      class="about py-20 px-5 w-full overflow-x-hidden"
+      id="roadmap"
+    >
+      <h1
+        data-taos-offset="400"
+        class="lg:text-[75px] md:text-[60px] text-5xl text-center duration-[300ms] taos:[transform:perspective(2500px)_rotateY(100deg)] taos:invisible taos:[backface-visibility:hidden]"
+      >
+        Roadmap🚀
+      </h1>
+      <div
+        class="roadmap relative lg:max-w-[1100px] md:max-w-[650px] mx-auto w-full mx-full rounded-lg my-10"
+      >
+        <div
+          class="absolute leftright right-0 top-0 lg:-translate-y-44 -translate-y-32 xl:translate-x-20 md:block hidden"
+        >
+          <img
+            src="/assets/images/before-cat.png"
+            alt="before-cat"
+            class="lg:w-[200px] lg:h-[200px] md:w-[150PX] md:h-[150px]"
+          />
+        </div>
+        <!-- box 1 -->
+        <div class="">
+          <div
+            class="flex lg:flex-nowrap flex-wrap lg:justify-start justify-center gap-8 md:p-10 p-4 items-center"
+          >
+            <div
+              class="w-[400px] duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+              data-taos-offset="400"
+            >
+              <div
+                class="bounce flex items-center lg:justify-end justify-center lg:-mx-6 mx-0 relative z-index-50"
+              >
+                <h3 class="text-[32px]">phase 1</h3>
+                <img
+                  src="/assets/images/roadmap-cat-1.png"
+                  alt="roadmap-cat-1"
+                  width="183px"
+                  height="183px"
+                />
+              </div>
+            </div>
+            <div class="w-[850px]">
+              <div
+                class="bg-[#00000033] p-5 rounded-2xl delay-[300ms] duration-[600ms] taos:[transform:translate3d(200px,0,0)_scale(1.2)] taos:opacity-0"
+                data-taos-offset="400"
+              >
+                <p>
+                  <span class="underline">Launch:</span> Official introduction
+                  of the $FLOVIaproject to the cryptocurrency market, marking
+                  thebeginning of its journey.
+                  <br />
+
+                  <span class="underline"
+                    >CoinGecko & Coinmarketcap Listings:</span
+                  >
+                  Obtainingrecognition and visibility by being listed
+                  onprominent platforms.
+                  <br />
+
+                  <span class="underline">Reach 1.000+ Holders:</span>
+                  Establishing a solid baseof $FLOVI token holders, indicating
+                  initial interestin the project.
+                  <br />
+
+                  <span class="underline">Get $FLOVI Trending:</span> Creating
+                  excitement aroundthe $FLOVI token to attract attention
+                  andstimulate demand.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- box 2 -->
+        <div class="">
+          <div
+            class="flex lg:flex-nowrap flex-wrap lg:justify-start justify-center gap-8 md:p-10 p-4 items-center"
+          >
+            <div
+              class="w-[400px] duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+              data-taos-offset="400"
+            >
+              <div
+                class="bounce flex items-center lg:justify-end justify-center lg:-mx-6 mx-0 relative z-index-50"
+              >
+                <h3 class="text-[32px]">phase 2</h3>
+                <img
+                  src="/assets/images/roadmap-cat-2.png"
+                  alt="roadmap-cat-2"
+                  width="183px"
+                  height="183px"
+                />
+              </div>
+            </div>
+            <div class="w-[850px]">
+              <div
+                class="bg-[#00000033] p-5 rounded-2xl delay-[300ms] duration-[600ms] taos:[transform:translate3d(200px,0,0)_scale(1.2)] taos:opacity-0"
+                data-taos-offset="400"
+              >
+                <p>
+                  <span class="underline">Community Partnerships:</span>
+                  Collaborating with other projects & organizations to enhance
+                  $FLOVI's reach & impact within the community.
+                  <br />
+
+                  <span class="underline"> Audit:</span>
+                  Independent evaluation of the project'ssecurity & reliability
+                  to build investor confidence.
+                  <br />
+
+                  <span class="underline">Reach 50OO+ Holders:</span>
+                  Expanding the $FLOVI holder
+                  <br />
+
+                  <span class="underline">Weekly Spaces:</span> Hosting regular
+                  discussion sessions tofoster engagement & exchange within the
+                  community.
+                  <br />
+
+                  <span class="underline">Flovi Game v1 mini games:</span>
+                  Launching the first version of the $FLOVI game with
+                  entertaining & interactive mini-games.
+                  <br />
+
+                  <span class="underline"
+                    >Seeking partnerships to integrate well-known cryptoskins
+                    into the game & future museum:</span
+                  >
+                  Exploring collaborations with established crypto projects to
+                  incorporate recognizable skins into the game & upcoming
+                  virtual museum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- box 3 -->
+        <div class="">
+          <div
+            class="flex lg:flex-nowrap flex-wrap lg:justify-start justify-center gap-8 md:p-10 p-4 items-center"
+          >
+            <div
+              class="w-[400px] duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+              data-taos-offset="400"
+            >
+              <div
+                class="bounce flex items-center lg:justify-end justify-center lg:-mx-6 mx-0 relative z-index-50"
+              >
+                <h3 class="text-[32px]">phase 3</h3>
+                <img
+                  src="/assets/images/roadmap-cat-3.png"
+                  alt="roadmap-cat-3"
+                  width="183px"
+                  height="183px"
+                />
+              </div>
+            </div>
+            <div class="w-[850px]">
+              <div
+                class="bg-[#00000033] p-5 rounded-2xl delay-[300ms] duration-[600ms] taos:[transform:translate3d(200px,0,0)_scale(1.2)] taos:opacity-0"
+                data-taos-offset="400"
+              >
+                <p>
+                  <span class="underline">Flovi Game v2:</span>
+                  Developing and releasing the second version of the $FLOVI game
+                  with gameplay improvements and new features.
+                  <br />
+
+                  <span class="underline"> Reach 10000+ Holders:</span>
+                  Continued expansion of the holder base to consolidate $FLOVI's
+                  position in the market.
+                  <br />
+
+                  <span class="underline">CEX listings:</span>
+                  Listing the $FLOVI token on centralized cryptocurrency
+                  exchanges to increase liquidity and accessibility.
+                  <br />
+
+                  <span class="underline">Surprise bonus Flovi:</span> holders
+                  to enhance loyalty and enthusiasm.
+                  <br />
+                  <br />
+
+                  <span class="text-[#FF2300]">ALMIGHTYPAWS!</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- box 4 -->
+        <div class="">
+          <div
+            class="flex lg:flex-nowrap flex-wrap lg:justify-start justify-center gap-8 md:p-10 p-4 items-center"
+          >
+            <div
+              class="w-[400px] duration-[300ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
+              data-taos-offset="400"
+            >
+              <div
+                class="bounce flex items-center lg:justify-end justify-center lg:-mx-6 mx-0 relative z-index-50"
+              >
+                <h3 class="text-[32px]">phase 4</h3>
+                <img
+                  src="/assets/images/roadmap-cat-4.png"
+                  alt="roadmap-cat-4"
+                  width="183px"
+                  height="183px"
+                />
+              </div>
+            </div>
+            <div class="w-[850px]">
+              <div
+                class="bg-[#00000033] p-5 rounded-2xl delay-[300ms] duration-[600ms] taos:[transform:translate3d(200px,0,0)_scale(1.2)] taos:opacity-0"
+                data-taos-offset="400"
+              >
+                <p>
+                  <span class="underline">Reach 100,000+ holders:</span>
+                  Achieving a significant milestone by surpassing 100.000 $FLOVI
+                  token holders.demonstrating widespread adoption of the
+                  project.
+                  <br />
+
+                  <span class="underline"> Partnerships:</span>
+                  Continuing to develop and strengthen strategic partnerships to
+                  support the growth and expansion of $FLOVI.
+                  <br />
+
+                  <span class="underline">Flovi Game v3 p2p:</span>
+                  Launching the third version of the$FLOVI game with
+                  peer-to-peer functionality for ane ven more immersive gaming
+                  experience.
+                  <br />
+
+                  <span class="underline">Museum of NFT:</span> Creating a
+                  virtual museum of digital art (NFTs) to showcase and promote
+                  the $FLOVI collection and its creators.
+                  <br />
+                  <span class="underline">Revealing Ecosystem: </span> Launch of
+                  native token
+                  <br />
+                  <br />
+
+                  <span class="text-[#FF2300]">TEAMPOWER!</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JOINCOMMUNITY  -->
+
+    <div class="commeuntiy overflow-x-hidden">
+      <div
+        class="grid lg:grid-cols-2 grid-cols-1 gap-4 justify-center items-center"
+      >
+        <div
+          class="delay-[300ms] duration-[600ms] taos:[transform:translate3d(0,-200px,0)_scale(1.2)] taos:opacity-0"
+          data-taos-offset="500"
+        >
+          <img
+            src="/assets/images/commeuntiy-img.png"
+            alt="commeuntiy"
+            class="w-full lg:h-[754px] md:h-[600px] object-contain"
+          />
+        </div>
+        <div
+          class="flex flex-col lg:justify-start justify-center lg:items-start items-center gap-8 px-5 lg:mt-20 mt-6"
+        >
+          <h1
+            data-taos-offset="400"
+            class="lg:text-[75px] md:text-[60px] text-5xl md:text-start text-center duration-[300ms] taos:[transform:perspective(2500px)_rotateY(100deg)] taos:invisible taos:[backface-visibility:hidden]"
+          >
+            JOIN <br class="lg:block hidden" />COMMUNITY 🐾
+          </h1>
+          <p
+            class="text-2xl lg:text-start text-center"
+            data-taos-offset="400"
+          >
+            Remember, the strength of our project is rooted in its foundations.
+            Together, we are the architects of our future.
+            <br />
+            Stand united, work collaboratively, and bolster the community that
+            powers us. Our collective resolve is our cornerstone.
+            <br />
+            Together, we're not just dreaming—we're achieving. Let's hit our
+            milestones one by one.
+          </p>
+          <a
+            href="https://t.me/flovicommunity"
+            class="zoom block -mx-6"
+          >
+            <img
+              src="/assets/images/telegram-2.png"
+              alt="telegram"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex lg:m-auto -my-[60px]">
+      <marquee
+        direction="left"
+        height="80px"
+        class="bg-[#FF2300] border-y-4 border-black flex items-center"
+      >
+        <p class="text-3xl text-black">
+          $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi
+          - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi -
+          $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi
+          - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi - $Flovi -
+        </p>
+      </marquee>
+    </div>
+    <!-- footer  -->
+    <div class="about lg:px-20 md:px-10 px-5 lg:pt-20 bg-[#161112]">
+      <footer class="border-b border-[#ffffff45]">
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-8 py-20">
+          <div class="">
+            <div>
+              <img
+                src="/assets/images/logo.png"
+                alt="logo"
+              />
+              <p class="mt-6">
+                Unleash the power of community with $FLOVI. Join us in shaping a
+                decentralized future where every token tells a story of unity
+                and strength. Your journey with Flovi Inu starts here.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="grid grid-cols-3 grid-cols-1">
+              <div>
+                <h3 class="text-[20px]">Quick Links</h3>
+                <ul class="flex flex-col gap-3 mt-3">
+                  <li>
+                    <a
+                      href="#about"
+                      class="nav-item"
+                    >
+                      <p>About</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="nav-item"
+                    >
+                      <p>Tokenomics</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#roadmap"
+                      class="nav-item"
+                    >
+                      <p>Roadmap</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-[20px]">Resources</h3>
+                <ul class="flex flex-col gap-3 mt-3">
+                  <li>
+                    <a
+                      href="https://www.dextools.io/app/en/ether/pair-explorer/0xcae4ea1ca5d2c727ea5bc7fcf74642288a580231?t=1713396209860"
+                      class="nav-item"
+                    >
+                      <p>Dextools</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://etherscan.io/token/0x725024200cd4e1f259fcf2b7153d37fb477e139c"
+                      class="nav-item"
+                    >
+                      <p>Etherscan</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-[20px]">SOCIALS</h3>
+                <div class="flex items-center gap-2 mt-3">
+                  <a
+                    href="https://t.me/flovicommunity"
+                    class="zoom nav-item"
+                  >
+                    <img
+                      src="/assets/images/telegram.png"
+                      alt="telegram"
+                      class="md:w-auto md:h-auto w-[40px] h-[40px]"
+                    />
+                  </a>
+                  <a
+                    href="https://x.com/Flovi_CTO?t=Hu833gGm9i9Vrz3dzwbLpQ&s=09"
+                    class="zoom nav-item"
+                  >
+                    <img
+                      src="/assets/images/twitter.png"
+                      alt="twitter"
+                      class="md:w-auto md:h-auto w-[40px] h-[40px]"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <p class="text-center py-5">
+        Copyright © 2024 FLOVI. All Rights Reserved
+      </p>
+    </div>
+
+    <!-- script  -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
